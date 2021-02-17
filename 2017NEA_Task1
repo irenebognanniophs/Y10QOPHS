@@ -1,24 +1,33 @@
-print("League registration")
-name= str(input("Enter first name >>> "))
-nickname= str(input("Enter nickname >>> "))
-email= str(input("Enter your email address>>> "))
-skill=str(input("Enter skill level - E for expert or C for casual >>> ")).upper()
-print("Please review your details")
+def league ():
+ loopAgain = True
+ while loopAgain == True:
+  print("League registration")
+  name= str(input("Enter first name >>> "))
+  nickname= str(input("Enter nickname >>> "))
+  email= str(input("Enter your email address>>> "))
+  skill=str(input("Enter skill level - E for expert or C for casual >>> ")).upper()
+  print("Please review your details")
 
-print("")
+  print("")
 
-print("First name", name)
-print("Nickname", nickname)
-print("Email adress is", email)
-if skill== "E":
- print("Skill level is Expert")
-if skill== "C":
+  print("First name is", name)
+  print("Nickname is", nickname)
+  print("Email adress is", email)
+  if skill== "E":
+   print("Skill level is Expert")
+  if skill== "C":
    print("SKill level is Casual")
+   
+  print("")
 
-print("")
 
-confirm=str(input("please confirm that these details are correct- Y/N "))
-while confirm=="Y" or "y":
- print("Many thanks")
-else:
-  print("Please re-enter all the personal details again")
+
+  confirm= str(input("please confirm that these details are correct- Y/N")).upper()
+  if confirm=="N":
+   print("Please re-enter all the personal details again")
+   league()
+  elif confirm=="Y":
+   print("Many thanks")
+   
+league()
+   
