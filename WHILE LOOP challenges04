@@ -1,0 +1,13 @@
+count= 0
+name2= "y"
+
+while name2=="y":
+  name=str(input("Enter the name of who you want to invite to your party >>> "))
+  print(name, "has now been invited")
+  count= count + 1
+  name2=str(input("Do you want to invite somebody else? y/n "))
+  
+if count==1:
+ print("You have invited 1 person to the party")
+else:  
+ print ("You have invited", count, "people to the party")
