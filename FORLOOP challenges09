@@ -1,0 +1,10 @@
+peoplenum = int(input("How many people do you want to invite to your party? "))
+
+if peoplenum < 10:
+  for i in range (peoplenum):
+    name=str(input("Enter the name of someone you want to invite >>> "))
+    print(name, "has been invited") 
+    print("")
+    
+elif peoplenum >= 10:
+  print("Too many people")
