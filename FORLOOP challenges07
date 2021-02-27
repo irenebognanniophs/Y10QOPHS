@@ -1,8 +1,8 @@
 total = 0
 
-for i in range(total):
-  num1 = int(input("Enter a number >>> "))
-  num2 = int(input("Enter a second number >>> "))
-  num3 = int(input("Enter a third number >>> "))
-  num4 = int(input("Enter a fourth number >>> "))
-  num5 = int(input("Enter a fifth number >>> "))
+for i in range(5):
+ num=int(input("Enter a number >>> "))
+ included = str(input("Do you want this number included? y/n "))
+ if included == "y":
+   total = total + num
+print("The total is", total)
