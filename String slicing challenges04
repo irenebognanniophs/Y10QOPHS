@@ -1,0 +1,7 @@
+nursery = str(input("Enter the first line of a nursery rhyme >>>  "))
+length = len(nursery)
+print ("This has", length, "letters in it")
+firstnum= int(input("Enter a starting number >>>  "))
+lastnum= int(input("Enter an ending number >>>  "))
+section = nursery [firstnum:lastnum]
+print (section)
