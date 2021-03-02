@@ -1,0 +1,8 @@
+loopAgain = "True"
+while loopAgain == "True":
+  lastname = str(input("Enter your last name >>> "))
+  num = 1
+  lastletters = lastname[0:3] 
+  membershipname = str(lastletters) + str(num)
+  print ("Your membership name is",membershipname)
+  num = num + 1
