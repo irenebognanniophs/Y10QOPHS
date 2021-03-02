@@ -1,0 +1,3 @@
+words = str(input("Enter a word or any word >>> "))
+upper = words.upper()
+print(upper)
