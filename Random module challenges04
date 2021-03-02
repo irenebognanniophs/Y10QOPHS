@@ -1,6 +1,6 @@
 import random
 num = random.randint(1,5)
-print(num)
+
 guess = int(input("Pick a number >>> "))
 
 if guess == num:
