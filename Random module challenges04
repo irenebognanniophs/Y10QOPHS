@@ -1,0 +1,18 @@
+import random
+num = random.randint(1,5)
+print(num)
+guess = int(input("Pick a number >>> "))
+
+if guess == num:
+  print("Well done")
+
+if guess < num:
+  print("Too low")
+  secondguess = int(input("Guess again >>> "))
+elif guess > num:
+  print("Too high")
+  secondguess = int(input("Guess again >>> "))
+if secondguess!=num:
+    print ("You lose")
+elif secondguess == num:
+    print("Correct")
