@@ -1,18 +1,39 @@
 import random
 print("Red","Blue","Purple", "Yellow","Green")
 colour = random.choice(["Red","Blue","Purple", "Yellow","Green"]) 
+print(colour)
 pick= str(input("Pick one of the colours above >>> "))
 
 if pick == colour:
-  print("Well done")
+  print("Well done!")
 
 while pick != colour:
   if colour == "Green":
-    print("I bet you are GREEN with envy")
-    guess = str(input("Guess again >>> "))
-  elif colour == "Blue":
+   print("I bet you are GREEN with envy")
+   pick = str(input("Guess again >>> "))
+   if pick == colour:
+    print("Well done!")
+    
+  if colour == "Blue":
    print ("You are probably feeling BLUE right now")
-   guess = str(input("Guess again >>> "))
-  elif colour == "Red":
+   pick = str(input("Guess again >>> "))
+   if pick == colour:
+    print("Well done!")
+    
+  if colour == "Red":
    print ("I think your face is RED with rage")
-   guess = str(input("Guess again >>> "))
+   pick = str(input("Guess again >>> "))
+   if pick == colour:
+    print("Well done!")
+    
+  if colour == "Purple":
+   print("Is your brain becoming PURPLE?")
+   pick = str(input("Guess again >>> "))
+   if pick == colour:
+    print("Well done!")
+    
+  if colour == "Yellow":
+   print("If you get this right, the room will become YELLOW")
+   pick = str(input("Guess again >>> "))
+   if pick == colour:
+    print("Well done!")
