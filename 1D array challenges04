@@ -1,0 +1,12 @@
+tvprogrammes = ["OuterBanks", "Elite","Riverdale","Euphoria"]
+
+for i in tvprogrammes:
+  print(i)
+
+print ("")
+
+newprogramme = str(input("Enter another show >>> "))
+location = int(input("In which position do you want to insert the show in the list? "))
+
+tvprogrammes.insert(location, newprogramme)
+print(tvprogrammes)
