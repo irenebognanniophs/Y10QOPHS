@@ -3,7 +3,13 @@ names.append(input("Enter the name of someone you want to invite to a party >>> 
 names.append(input("Enter another name >>> "))
 names.append(input("Enter another name >>> "))
 othername=input("Do you want to add another name? ")
-if othername =="yes":
-  names.append(input("Enter another name >>> "))
-else:
- print("You have invited", len(names), "people")
+
+if othername == "no":
+  print("You have invited", len(names), "people")
+  
+while othername == "yes":
+  othernames=input("Enter another name >>> ")
+  names.append(othernames)
+  othername=input("Do you want to add another name? ")
+  if othername == "no":
+   print("You have invited", len(names), "people")
