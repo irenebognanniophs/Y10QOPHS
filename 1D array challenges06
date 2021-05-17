@@ -1,0 +1,17 @@
+nums = []
+
+num1=int(input("Enter a number >>> "))
+nums.append(num1)
+print(nums)
+num2=int(input("Enter another number >>> "))
+nums.append(num2)
+print(nums)
+num3=int(input("Enter another number >>> "))
+
+choice =str(input("Do you want the last number to be saved? "))
+
+if choice =="yes":
+ nums.append(num3)
+ print(nums)
+if choice !="yes":
+ print(nums)
