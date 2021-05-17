@@ -1,0 +1,16 @@
+food = []
+
+ftype1 = input("Enter a type of food >>> ")
+food.append(ftype1)
+ftype2 = input("Enter another type of food >>> ")
+food.append(ftype2)
+ftype3 = input("Enter another type of food >>> ")
+food.append(ftype3)
+ftype4 = input("Enter another type of food >>> ")
+food.append(ftype4)
+
+print(food)
+
+removeFood = input("Which food do you want to delete? ")
+food.remove(removeFood)
+print(food)
