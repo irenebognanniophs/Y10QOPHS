@@ -5,14 +5,19 @@ guess = int(input("Pick a number >>> "))
 
 if guess == num:
   print("Well done")
-
 if guess < num:
   print("Too low")
   secondguess = int(input("Guess again >>> "))
+  if secondguess!=num:
+    print ("You lose")
+  elif secondguess == num:
+    print("Correct")
+  
 elif guess > num:
   print("Too high")
   secondguess = int(input("Guess again >>> "))
-if secondguess!=num:
+  if secondguess!=num:
     print ("You lose")
-elif secondguess == num:
+  elif secondguess == num:
     print("Correct")
+
